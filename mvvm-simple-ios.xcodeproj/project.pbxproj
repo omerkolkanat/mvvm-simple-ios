@@ -11,6 +11,7 @@
 		5B1568372168D39A00555FD4 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1568362168D39A00555FD4 /* MovieModel.swift */; };
 		5B1568392168D3AE00555FD4 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1568382168D3AE00555FD4 /* MovieViewModel.swift */; };
 		5B1568402168E11800555FD4 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B15683F2168E11800555FD4 /* MovieService.swift */; };
+		5B1568512169421200555FD4 /* MovieServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1568502169421200555FD4 /* MovieServiceTests.swift */; };
 		5BB950232168CD5400F69775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB950222168CD5400F69775 /* AppDelegate.swift */; };
 		5BB950252168CD5400F69775 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB950242168CD5400F69775 /* MovieViewController.swift */; };
 		5BB950282168CD5400F69775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB950262168CD5400F69775 /* Main.storyboard */; };
@@ -18,12 +19,25 @@
 		5BB9502D2168CD5500F69775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB9502B2168CD5500F69775 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5B15684B216940EC00555FD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BB950172168CD5400F69775 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BB9501E2168CD5400F69775;
+			remoteInfo = "mvvm-simple-ios";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2134DDA71F10338D3178FBDF /* Pods_mvvm_simple_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvvm_simple_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB8EC5BCD81872E6158C3ED /* Pods-mvvm-simple-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvvm-simple-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mvvm-simple-ios/Pods-mvvm-simple-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		5B1568362168D39A00555FD4 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		5B1568382168D3AE00555FD4 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		5B15683F2168E11800555FD4 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		5B156846216940EC00555FD4 /* mvvm-simple-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mvvm-simple-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B15684A216940EC00555FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1568502169421200555FD4 /* MovieServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceTests.swift; sourceTree = "<group>"; };
 		5BB9501F2168CD5400F69775 /* mvvm-simple-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvvm-simple-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB950222168CD5400F69775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BB950242168CD5400F69775 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +49,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5B156843216940EC00555FD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BB9501C2168CD5400F69775 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,10 +116,20 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		5B156847216940EC00555FD4 /* mvvm-simple-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B15684A216940EC00555FD4 /* Info.plist */,
+				5B1568502169421200555FD4 /* MovieServiceTests.swift */,
+			);
+			path = "mvvm-simple-iosTests";
+			sourceTree = "<group>";
+		};
 		5BB950162168CD5400F69775 = {
 			isa = PBXGroup;
 			children = (
 				5BB950212168CD5400F69775 /* mvvm-simple-ios */,
+				5B156847216940EC00555FD4 /* mvvm-simple-iosTests */,
 				5BB950202168CD5400F69775 /* Products */,
 				284E958FF90C1305D086F644 /* Pods */,
 				17E8357DC2DFE01FB8802A86 /* Frameworks */,
@@ -109,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				5BB9501F2168CD5400F69775 /* mvvm-simple-ios.app */,
+				5B156846216940EC00555FD4 /* mvvm-simple-iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +164,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5B156845216940EC00555FD4 /* mvvm-simple-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B15684D216940EC00555FD4 /* Build configuration list for PBXNativeTarget "mvvm-simple-iosTests" */;
+			buildPhases = (
+				5B156842216940EC00555FD4 /* Sources */,
+				5B156843216940EC00555FD4 /* Frameworks */,
+				5B156844216940EC00555FD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B15684C216940EC00555FD4 /* PBXTargetDependency */,
+			);
+			name = "mvvm-simple-iosTests";
+			productName = "mvvm-simple-iosTests";
+			productReference = 5B156846216940EC00555FD4 /* mvvm-simple-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5BB9501E2168CD5400F69775 /* mvvm-simple-ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BB950312168CD5500F69775 /* Build configuration list for PBXNativeTarget "mvvm-simple-ios" */;
@@ -162,6 +212,10 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "OMER KOLKANAT";
 				TargetAttributes = {
+					5B156845216940EC00555FD4 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 5BB9501E2168CD5400F69775;
+					};
 					5BB9501E2168CD5400F69775 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -181,11 +235,19 @@
 			projectRoot = "";
 			targets = (
 				5BB9501E2168CD5400F69775 /* mvvm-simple-ios */,
+				5B156845216940EC00555FD4 /* mvvm-simple-iosTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B156844216940EC00555FD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BB9501D2168CD5400F69775 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +315,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B156842216940EC00555FD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1568512169421200555FD4 /* MovieServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BB9501B2168CD5400F69775 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,6 +336,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B15684C216940EC00555FD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BB9501E2168CD5400F69775 /* mvvm-simple-ios */;
+			targetProxy = 5B15684B216940EC00555FD4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5BB950262168CD5400F69775 /* Main.storyboard */ = {
@@ -287,6 +365,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5B15684E216940EC00555FD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RAQF392F68;
+				INFOPLIST_FILE = "mvvm-simple-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gokod.mvvm-simple-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mvvm-simple-ios.app/mvvm-simple-ios";
+			};
+			name = Debug;
+		};
+		5B15684F216940EC00555FD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RAQF392F68;
+				INFOPLIST_FILE = "mvvm-simple-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gokod.mvvm-simple-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mvvm-simple-ios.app/mvvm-simple-ios";
+			};
+			name = Release;
+		};
 		5BB9502F2168CD5500F69775 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -444,6 +562,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B15684D216940EC00555FD4 /* Build configuration list for PBXNativeTarget "mvvm-simple-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B15684E216940EC00555FD4 /* Debug */,
+				5B15684F216940EC00555FD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5BB9501A2168CD5400F69775 /* Build configuration list for PBXProject "mvvm-simple-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
