@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4BEB5ABCB39158E768CE4530 /* Pods_mvvm_simple_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2134DDA71F10338D3178FBDF /* Pods_mvvm_simple_ios.framework */; };
+		5B1568372168D39A00555FD4 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1568362168D39A00555FD4 /* MovieModel.swift */; };
+		5B1568392168D3AE00555FD4 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1568382168D3AE00555FD4 /* MovieViewModel.swift */; };
+		5B1568402168E11800555FD4 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B15683F2168E11800555FD4 /* MovieService.swift */; };
 		5BB950232168CD5400F69775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB950222168CD5400F69775 /* AppDelegate.swift */; };
-		5BB950252168CD5400F69775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB950242168CD5400F69775 /* ViewController.swift */; };
+		5BB950252168CD5400F69775 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB950242168CD5400F69775 /* MovieViewController.swift */; };
 		5BB950282168CD5400F69775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB950262168CD5400F69775 /* Main.storyboard */; };
 		5BB9502A2168CD5500F69775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB950292168CD5500F69775 /* Assets.xcassets */; };
 		5BB9502D2168CD5500F69775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB9502B2168CD5500F69775 /* LaunchScreen.storyboard */; };
@@ -18,9 +21,12 @@
 /* Begin PBXFileReference section */
 		2134DDA71F10338D3178FBDF /* Pods_mvvm_simple_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mvvm_simple_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB8EC5BCD81872E6158C3ED /* Pods-mvvm-simple-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvvm-simple-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mvvm-simple-ios/Pods-mvvm-simple-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		5B1568362168D39A00555FD4 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		5B1568382168D3AE00555FD4 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		5B15683F2168E11800555FD4 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		5BB9501F2168CD5400F69775 /* mvvm-simple-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvvm-simple-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB950222168CD5400F69775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BB950242168CD5400F69775 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BB950242168CD5400F69775 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		5BB950272168CD5400F69775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BB950292168CD5500F69775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BB9502C2168CD5500F69775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +63,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5B15683C2168E0B500555FD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B1568362168D39A00555FD4 /* MovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B15683D2168E0BC00555FD4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B1568382168D3AE00555FD4 /* MovieViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B15683E2168E0EA00555FD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BB950242168CD5400F69775 /* MovieViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B1568412168E11D00555FD4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5B15683F2168E11800555FD4 /* MovieService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		5BB950162168CD5400F69775 = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				5BB950222168CD5400F69775 /* AppDelegate.swift */,
-				5BB950242168CD5400F69775 /* ViewController.swift */,
+				5B15683C2168E0B500555FD4 /* Model */,
+				5B15683E2168E0EA00555FD4 /* View */,
+				5B15683D2168E0BC00555FD4 /* ViewModel */,
+				5B1568412168E11D00555FD4 /* Service */,
 				5BB950262168CD5400F69775 /* Main.storyboard */,
 				5BB950292168CD5500F69775 /* Assets.xcassets */,
 				5BB9502B2168CD5500F69775 /* LaunchScreen.storyboard */,
@@ -216,8 +257,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BB950252168CD5400F69775 /* ViewController.swift in Sources */,
+				5B1568372168D39A00555FD4 /* MovieModel.swift in Sources */,
+				5BB950252168CD5400F69775 /* MovieViewController.swift in Sources */,
 				5BB950232168CD5400F69775 /* AppDelegate.swift in Sources */,
+				5B1568392168D3AE00555FD4 /* MovieViewModel.swift in Sources */,
+				5B1568402168E11800555FD4 /* MovieService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +411,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAQF392F68;
 				INFOPLIST_FILE = "mvvm-simple-ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gokod.mvvm-simple-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -383,7 +430,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAQF392F68;
 				INFOPLIST_FILE = "mvvm-simple-ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gokod.mvvm-simple-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
